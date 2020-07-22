@@ -14,4 +14,4 @@ npm run start
 
 ## 程式頁面階層
 
-![web frame mindmap](/Users/ponpon55837/jobhookswithreact/App.js.png)
+![web frame mindmap](https://github.com/Ponpon55837/JobsForGithubApiByReact/blob/master/App.js.png?raw=true)
