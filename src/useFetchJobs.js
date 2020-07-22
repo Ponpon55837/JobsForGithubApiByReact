@@ -8,6 +8,7 @@ const ACTIONS = {
   UPDATE_HAS_NEXT_PAGE: 'update-has-next-page'
 }
 
+// https://cors-anywhere.herokuapp.com/
 const JOBS_API_URL = 'https://thingproxy.freeboard.io/fetch/https://jobs.github.com/positions.json'
 
 const reducer = (state, action) => {
