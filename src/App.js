@@ -21,10 +21,9 @@ const App = () => {
 
   return (
     <Container className='my-4'>
-      {loading ? <h1>Loading ...</h1> : <h1 className='mb-4'>Github Jobs</h1>}
+      {loading ? <h1>Loading ...</h1> : error ? <h1>Error. Try Refreshing</h1> : <h1 className='mb-4'>Github Jobs</h1>}
       <SearchForm params={params} onParamChange={handleParamChange} />
       <JobPagination page={page} setPage={setPage} hasNextPage={hasNextPage} />
-      {error && <h1>Error. Try Refreshing</h1>}
       {jobs.map(job => {
         return <Job key={job.id} job={job} />
       })}
