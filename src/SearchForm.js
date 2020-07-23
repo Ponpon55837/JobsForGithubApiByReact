@@ -5,7 +5,7 @@ const SearchForm = ({ params, onParamChange }) => {
   return (
     <Form className='mb-4'>
       <Form.Row className='align-items-end'>
-        <Form.Group as={Col}>
+        <Form.Group as={Col} xs='12' sm='6' md='4'>
           <Form.Label>Description</Form.Label>
           <Form.Control
             onChange={onParamChange}
@@ -13,7 +13,7 @@ const SearchForm = ({ params, onParamChange }) => {
             name='description'
             type='text' />
         </Form.Group>
-        <Form.Group as={Col}>
+        <Form.Group as={Col} xs='12' sm='6' md='4'>
           <Form.Label>Location</Form.Label>
           <Form.Control
             onChange={onParamChange}
