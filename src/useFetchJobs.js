@@ -9,7 +9,7 @@ const ACTIONS = {
 }
 
 // https://cors-anywhere.herokuapp.com/
-const JOBS_API_URL = 'https://thingproxy.freeboard.io/fetch/https://jobs.github.com/positions.json'
+const JOBS_API_URL = process.env.REACT_APP_URL
 
 const reducer = (state, action) => {
   switch (action.type) {
